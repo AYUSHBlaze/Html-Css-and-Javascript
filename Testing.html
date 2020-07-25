@@ -58,6 +58,25 @@
             input:invalid{
                 border: 5px solid red;
             }
+            :target{
+                background-color: coral;
+                font-size: 40px;
+            }
+            p::after{
+                content: "-Doesn't it?"
+            }
+            p::before{
+                content: "Remember this. ";
+            }
+            p::first-letter{
+                background-color: crimson;
+            }
+            p::first-line{
+                background-color: darkolivegreen;
+            }
+            ::selection{
+                background-color: hotpink;
+            }
         </style>
     </head>
     <body>
@@ -65,7 +84,7 @@
         <p>Testing active.</p>
         <p>I am a</p>
         <p>None</p>
-        <a href="www.google.com">Come on!, Search it.</a><br>
+        <a href="#name">Come on!, Search it.</a><br>
         <a href="www.google.com" target="_blank">Serach Again?</a><br>
         <a href="www.google.com">Last, Promise.</a><br>
         <a href="www.github.com">Let's see those repos :)</a><br>
@@ -89,6 +108,7 @@
                <li>Justin</li>
                <li>chae</li>
            </ul>
+           <p id="name">Ayush Singh, Works eveything out.</p>
            <select>
                <option value="volvo">Volvo</option>
                <option value="Fiat">Fiat</option>
